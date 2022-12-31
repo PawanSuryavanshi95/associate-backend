@@ -28,6 +28,6 @@ const userSchema = new mongoose.Schema({
     // bookings:[{ type: mongoose.Schema.Types.ObjectId, ref: 'Booking' }],
 });
 
-const userModel = mongoose.model('User',userSchema);
+const userModel = mongoose.model('User2',userSchema);
 
 module.exports = userModel;
