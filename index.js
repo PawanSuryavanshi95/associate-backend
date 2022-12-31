@@ -21,7 +21,8 @@ app.use(bodyParser.urlencoded({extended: false}));
 mongoose.set('strictQuery', false);
 //mongodb+srv://FliqaIndia:UxDe62bnBMbP6x7z@fliqaindia.1ry8g.mongodb.net/fliqa-backend
 //mongodb://127.0.0.1:27017/fliqa_associate
-mongoose.connect('mongodb+srv://FliqaIndia:UxDe62bnBMbP6x7z@fliqaindia.1ry8g.mongodb.net/fliqa-backend', { useNewUrlParser: true, useUnifiedTopology: true }, (err) => {
+//mongodb+srv://pawan:<password>@cluster0.okmid.gcp.mongodb.net/?retryWrites=true&w=majority
+mongoose.connect('mongodb+srv://pawan:5z53bhmGB3gYTzb@cluster0.okmid.gcp.mongodb.net/?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true }, (err) => {
     if (err) {
         console.log(err)
     } else {
