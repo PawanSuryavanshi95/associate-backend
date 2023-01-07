@@ -6,8 +6,8 @@ const mongoose = require('mongoose');
 var path = require('path');
 global.__appRoot = path.resolve(__dirname);
 
- const authRouter = require('./routes/AuthRouter');
-// const userRoutes = require('./routes/User');
+const authRouter = require('./routes/AuthRouter');
+const userRouter = require('./routes/UserRouter');
 // const leadRoutes = require('./routes/Lead');
 // const adminRoutes = require('./routes/Admin');
 
@@ -31,7 +31,7 @@ mongoose.connect('mongodb+srv://pawan:5z53bhmGB3gYTzb@cluster0.okmid.gcp.mongodb
 });
 
 app.use('/api/auth', authRouter);
-// app.use('/api/user', userRoutes);
+app.use('/api/user', userRouter);
 // app.use('/api/leads', leadRoutes);
 
 app.get('/', (req,res)=>{
